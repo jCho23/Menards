@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{EF8471BF-B512-497F-927B-4AD833D39AFB}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Menards/Tests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Menards/AppInitializer.cs">
     <Files>
       <File FileName="Menards/Tests.cs" Line="1" Column="1" />
+      <File FileName="Menards/AppInitializer.cs" Line="35" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

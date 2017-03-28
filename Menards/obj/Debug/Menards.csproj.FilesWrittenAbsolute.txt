@@ -1,0 +1,7 @@
+/Users/junecho/Projects/Menards/Menards/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/junecho/Projects/Menards/Menards/bin/Debug/Menards.dll.mdb
+/Users/junecho/Projects/Menards/Menards/bin/Debug/Menards.dll
+/Users/junecho/Projects/Menards/Menards/obj/Debug/Menards.dll
+/Users/junecho/Projects/Menards/Menards/obj/Debug/Menards.dll.mdb
+/Users/junecho/Projects/Menards/Menards/bin/Debug/nunit.framework.dll
+/Users/junecho/Projects/Menards/Menards/bin/Debug/Xamarin.UITest.dll
