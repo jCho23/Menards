@@ -31,5 +31,11 @@ namespace Menards
 			app.Repl();
 		}
 
+		[Test]
+		public void FirstTest()
+		{
+
+		}
+
 	}
 }
