@@ -34,15 +34,19 @@ namespace Menards
 		[Test]
 		public void ShoppingTest()
 		{
-			//Notification 
+			//Push-Notification Dismiss
 			app.Tap("button2");
 
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
+			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
 
 			app.Tap("Shop Departments");
+			app.Screenshot("Then we Tapped on the 'Shop Departments' Button");
 			app.Tap("Bath");
+			app.Screenshot("Next we Tapped on 'Bath'");
 			app.Tap("Bathroom Fan Accessories");
+			app.Screenshot("We Tapped our catagory, 'Bathroom Fan Accessories'");
 
 			app.Tap("search_product_title_tv");
 
