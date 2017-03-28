@@ -34,12 +34,21 @@ namespace Menards
 		[Test]
 		public void ShoppingTest()
 		{
+			//Notification 
 			app.Tap("button2");
+
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
 
 			app.Tap("Shop Departments");
 			app.Tap("Bath");
+			app.Tap("Bathroom Fan Accessories");
+
+			app.Tap("search_product_title_tv");
+
+			app.Tap("product_details_cart_button");
+
+			app.Tap("action_cart");
 		}
 
 	}
