@@ -37,7 +37,6 @@ namespace Menards
 			//Push-Notification Dismiss
 			app.Tap("button2");
 
-
 			app.Tap(x => x.Class("android.widget.ImageButton"));
 			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
 
@@ -49,10 +48,13 @@ namespace Menards
 			app.Screenshot("We Tapped our catagory, 'Bathroom Fan Accessories'");
 
 			app.Tap("search_product_title_tv");
+			app.Screenshot("Then we Tapped on the first item");
 
 			app.Tap("product_details_cart_button");
+			app.Screenshot("Next we Tapped on the 'Add to Cart' Button");
 
 			app.Tap("action_cart");
+			app.Screenshot("We Tapped on the 'Shopping Cart' icon to verify");
 		}
 
 	}
