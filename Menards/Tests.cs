@@ -32,9 +32,14 @@ namespace Menards
 		}
 
 		[Test]
-		public void FirstTest()
+		public void ShoppingTest()
 		{
+			app.Tap("button2");
 
+			app.Tap(x => x.Class("android.widget.ImageButton"));
+
+			app.Tap("Shop Departments");
+			app.Tap("Bath");
 		}
 
 	}
