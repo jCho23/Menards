@@ -23,6 +23,7 @@ namespace Menards
 		public void BeforeEachTest()
 		{
 			app = AppInitializer.StartApp(platform);
+			app.Screenshot("App Launched");
 		}
 
 		[Test]
@@ -34,8 +35,8 @@ namespace Menards
 		[Test]
 		public void ShoppingTest()
 		{
-			//Push-Notification Dismiss
-			app.Tap("button2");
+			//Push-Notification Dismiss for local tests
+			//app.Tap("button2");
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
 			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
@@ -60,23 +61,29 @@ namespace Menards
 		[Test]
 		public void WeeklyAdLocationTest()
 		{
-			//Push-Notification Dismiss
-			app.Tap("button2");
+			//Push-Notification Dismiss for local tests
+			//app.Tap("button2");
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
 			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
 
 			app.Tap("Choose a store");
+			app.Screenshot("Then we Tapped on 'Choose a store'");
 			app.Tap("address_text");
+			app.Screenshot("Next, we Tapped on the 'Address Text' field");
 			app.EnterText("94111");
+			app.Screenshot("We entered our zip-code, '94111'");
 			app.PressEnter();
+			app.Screenshot("Then we Tapped 'Enter' on the keyboard");
 
 			app.Tap("storeStartList");
+			app.Screenshot("We Tapped on the first store");
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
-			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
+			app.Screenshot("We Tapped on the 'Hamburger' Button");
 
 			app.Tap("Weekly Ads");
+			app.Screenshot("Then we Tapped on 'Weekly Ads'");
 
 			app.Tap("text_view_header");
 			app.Screenshot("Then we Tapped on the first Ad");
