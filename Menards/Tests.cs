@@ -58,7 +58,7 @@ namespace Menards
 		}
 
 		[Test]
-		public void SecondTest()
+		public void WeeklyAdLocationTest()
 		{
 			//Push-Notification Dismiss
 			app.Tap("button2");
@@ -78,10 +78,8 @@ namespace Menards
 
 			app.Tap("Weekly Ads");
 
-
-
-
-
+			app.Tap("text_view_header");
+			app.Screenshot("Then we Tapped on the first Ad");
 		}
 
 	}
