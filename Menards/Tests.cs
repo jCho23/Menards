@@ -60,6 +60,27 @@ namespace Menards
 		[Test]
 		public void SecondTest()
 		{
+			//Push-Notification Dismiss
+			app.Tap("button2");
+
+			app.Tap(x => x.Class("android.widget.ImageButton"));
+			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
+
+			app.Tap("Choose a store");
+			app.Tap("address_text");
+			app.EnterText("94111");
+			app.PressEnter();
+
+			app.Tap("storeStartList");
+
+			app.Tap(x => x.Class("android.widget.ImageButton"));
+			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
+
+			app.Tap("Weekly Ads");
+
+
+
+
 
 		}
 
