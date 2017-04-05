@@ -57,5 +57,11 @@ namespace Menards
 			app.Screenshot("We Tapped on the 'Shopping Cart' icon to verify");
 		}
 
+		[Test]
+		public void SecondTest()
+		{
+
+		}
+
 	}
 }
