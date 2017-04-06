@@ -4,6 +4,7 @@ using System.Linq;
 using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
+using System.Threading;
 
 namespace Menards
 {
@@ -27,16 +28,12 @@ namespace Menards
 		}
 
 		[Test]
-		public void AppLaunches()
-		{
-			app.Repl();
-		}
-
-		[Test]
 		public void ShoppingTest()
 		{
-			//Push-Notification Dismiss for local tests
-			//app.Tap("button2");
+
+			app.WaitForElement(x => x.Marked("OK"), "Timed out waiting for push notificaion dialog");
+			app.Tap("OK");
+			//Thread.Sleep(4000);
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
 			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
@@ -61,8 +58,9 @@ namespace Menards
 		[Test]
 		public void WeeklyAdLocationTest()
 		{
-			//Push-Notification Dismiss for local tests
-			//app.Tap("button2");
+
+			app.WaitForElement(x => x.Marked("OK"), "Timed out waiting for push notificaion dialog");
+			app.Tap("OK");
 
 			app.Tap(x => x.Class("android.widget.ImageButton"));
 			app.Screenshot("Let's start by Tapping on the 'Hamburger' Button");
